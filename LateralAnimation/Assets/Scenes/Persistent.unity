@@ -149,6 +149,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e8c31a65b77e40848e809537903fab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allRoundData:
+  - name: Round Zero
+    timeLimitInSeconds: 20
+    pointsAddedForCorrectAnswer: 5
+    questions:
+    - questionText: How many members are in the Washington State Senate?
+      answers:
+      - answerText: 53
+        isCorrect: 0
+      - answerText: 49
+        isCorrect: 1
+      - answerText: 42
+        isCorrect: 0
+    - questionText: 'How many members are in the Washington House of Representatives? '
+      answers:
+      - answerText: 96
+        isCorrect: 0
+      - answerText: 87
+        isCorrect: 0
+      - answerText: 98
+        isCorrect: 1
+    - questionText: What is the leader of the Senate called?
+      answers:
+      - answerText: President
+        isCorrect: 1
+      - answerText: Speaker
+        isCorrect: 0
 --- !u!4 &1023199455
 Transform:
   m_ObjectHideFlags: 0
