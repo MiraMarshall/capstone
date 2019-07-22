@@ -34,10 +34,6 @@ public class TriviaController : MonoBehaviour
         ShowQuestion();
         isRoundActive = true;
 
-        
-       
-
-
     }
 
     private void ShowQuestion()
