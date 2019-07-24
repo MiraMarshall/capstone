@@ -8,24 +8,31 @@ public class AnswerButton : MonoBehaviour {
 
     private AnswerData answerData;
     private TriviaController triviaController;
+   
 
     // Use this for initialization
     void Start () 
     {
         triviaController = FindObjectOfType<TriviaController> ();
+     
     }
 
     public void Setup(AnswerData data)
     {
         answerData = data;
         answerText.text = answerData.answerText;
+        
     }
 
 
     public void HandleClick()
     {
-       triviaController.AnswerButtonClicked (answerData.isCorrect);
-        Debug.Log("*************************");
+
+        Debug.Log("ANSWER BUTTON!!!!**************");
+        
+
+        triviaController.AnswerButtonClicked(answerData.isCorrect);
+
     
     }
 }

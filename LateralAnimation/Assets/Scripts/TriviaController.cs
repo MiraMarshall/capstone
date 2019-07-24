@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using System;
 
 public class TriviaController : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class TriviaController : MonoBehaviour
     public GameObject questionDisplay;
     public GameObject roundEndDisplay;
 
+  
+
     private DataController dataController;
     private RoundData currentRoundData;
     private QuestionData[] questionPool;
@@ -25,6 +28,8 @@ public class TriviaController : MonoBehaviour
     private int questionIndex;
     private int playerScore;
     private List<GameObject> answerButtonGameObjects = new List<GameObject>();
+
+    private bool isCorrect;
 
     // Use this for initialization
     void Start()
@@ -40,6 +45,8 @@ public class TriviaController : MonoBehaviour
 
         ShowQuestion();
         isRoundActive = true;
+
+        //AnswerButtonClicked(false);
 
     }
 
@@ -57,8 +64,8 @@ public class TriviaController : MonoBehaviour
 
             AnswerButton answerButton = answerButtonGameObject.GetComponent<AnswerButton>();
             answerButton.Setup(questionData.answers[i]);
-            Debug.Log("*************************");
         }
+        
     }
 
     private void RemoveAnswerButtons()
@@ -72,6 +79,9 @@ public class TriviaController : MonoBehaviour
 
     public void AnswerButtonClicked(bool isCorrect)
     {
+        Debug.Log("ANSWERBUTTONCLICKED*****************");
+        
+
         if (isCorrect)
         {
             playerScore += currentRoundData.pointsAddedForCorrectAnswer;

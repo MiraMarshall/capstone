@@ -7,7 +7,6 @@ public class DataController : MonoBehaviour
 {
     public RoundData[] allRoundData;
 
-
     // Use this for initialization
     void Start()
     {
