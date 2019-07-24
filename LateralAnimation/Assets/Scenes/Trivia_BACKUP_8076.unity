@@ -154,8 +154,13 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.61300004}
   m_AnchorMax: {x: 1, y: 0.81738114}
-  m_AnchoredPosition: {x: -1.2000122, y: -0.4997406}
+<<<<<<< HEAD
+  m_AnchoredPosition: {x: 0, y: 29}
+  m_SizeDelta: {x: -80, y: -0.99951}
+=======
+  m_AnchoredPosition: {x: -1.2, y: -0.49974}
   m_SizeDelta: {x: -77.6, y: -0.99948}
+>>>>>>> b51d1a81fc1b9e1a09b16d7cfc8cd2e20db5fcb3
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &16406185
 MonoBehaviour:
@@ -272,7 +277,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 421990532}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 466, y: 249, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -290,7 +295,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e37c1532edb014f01a9a99a59407a79f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  prefab: {fileID: 3042417363947705528, guid: b52511212e3284b0b8be251720586491, type: 3}
+=======
   prefab: {fileID: 854413845188783292, guid: b52511212e3284b0b8be251720586491, type: 3}
+>>>>>>> b51d1a81fc1b9e1a09b16d7cfc8cd2e20db5fcb3
 --- !u!1 &534252097
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,8 +580,13 @@ MonoBehaviour:
   timeRemainingDisplayText: {fileID: 1771618884}
   answerButtonObjectPool: {fileID: 421990534}
   answerButtonParent: {fileID: 1012383957}
+<<<<<<< HEAD
+  questionDisplay: {fileID: 16406183}
+  roundEndDisplay: {fileID: 1192262036}
+=======
   questionDisplay: {fileID: 1538719828}
   roundEndDisplay: {fileID: 1163885108}
+>>>>>>> b51d1a81fc1b9e1a09b16d7cfc8cd2e20db5fcb3
 --- !u!1 &1120146813
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,7 +725,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1163885109
 RectTransform:
   m_ObjectHideFlags: 0
@@ -730,7 +744,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
+<<<<<<< HEAD
+  m_AnchoredPosition: {x: 0, y: -1}
+=======
   m_AnchoredPosition: {x: 0, y: 1219}
+>>>>>>> b51d1a81fc1b9e1a09b16d7cfc8cd2e20db5fcb3
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1163885110

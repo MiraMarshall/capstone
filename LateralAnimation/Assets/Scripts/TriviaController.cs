@@ -82,8 +82,7 @@ public class TriviaController : MonoBehaviour
         {
             questionIndex++;
             ShowQuestion();
-        }
-        else
+        } else
         {
             EndRound();
         }
