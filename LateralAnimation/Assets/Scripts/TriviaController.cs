@@ -30,6 +30,7 @@ public class TriviaController : MonoBehaviour
     private List<GameObject> answerButtonGameObjects = new List<GameObject>();
 
     private bool isCorrect;
+    private string wrongAnswer = "WRONG!!!";
 
     // Use this for initialization
     void Start()
@@ -86,6 +87,10 @@ public class TriviaController : MonoBehaviour
         {
             playerScore += currentRoundData.pointsAddedForCorrectAnswer;
             scoreDisplayText.text = "Score: " + playerScore.ToString();
+        } else
+        {
+            print(wrongAnswer);
+            
         }
 
         if (questionPool.Length > questionIndex + 1)
@@ -109,7 +114,7 @@ public class TriviaController : MonoBehaviour
 
     public void ReturnToMenu()
     {
-        SceneManager.LoadScene("MenuScreen");
+        SceneManager.LoadScene("Level 1");
     }
 
     private void UpdateTimeRemainingDisplay()
