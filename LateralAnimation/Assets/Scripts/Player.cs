@@ -22,6 +22,8 @@ public class Player : MonoBehaviour
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] Vector2 deathKick = new Vector2(20f, 20f);
+    [SerializeField] GameObject laser;
+    [SerializeField] float projectileSpeed = 10f;
     //State
     bool isAlive = true;
 
@@ -52,6 +54,7 @@ public class Player : MonoBehaviour
         Jump();
         FlipSprite();
         Die();
+        Fire();
     }
 
     private void Run()
@@ -99,6 +102,18 @@ public class Player : MonoBehaviour
            }
     }
 
+    private void Fire()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            GameObject fireLaser = Instantiate(
+                laser,
+                transform.position,
+                Quaternion.identity) as GameObject;
+            fireLaser.GetComponent<Rigidbody2D>().velocity = new Vector2(projectileSpeed, 0);
+
+        }
+    }
     //private void Shoot()
     //{
     //   // var bullet = Instantiate(bulletPrefab) as Transform;

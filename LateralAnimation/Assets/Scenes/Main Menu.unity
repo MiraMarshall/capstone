@@ -681,6 +681,8 @@ MonoBehaviour:
   runSpeed: 10
   jumpSpeed: 25
   deathKick: {x: 200, y: 150}
+  laser: {fileID: 1335462582927699291, guid: d760f3f185dd24327a4cffe55f6ab1fe, type: 3}
+  projectileSpeed: 20
 --- !u!61 &1008971790
 BoxCollider2D:
   m_ObjectHideFlags: 0

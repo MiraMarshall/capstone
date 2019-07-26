@@ -6,9 +6,9 @@ public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 1f;
     Rigidbody2D myRigidBody;
+    //[SerializeField] int health = 200;
 
 
-    
     // Start is called before the first frame update
     void Start()
     {
