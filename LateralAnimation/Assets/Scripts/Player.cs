@@ -114,16 +114,5 @@ public class Player : MonoBehaviour
 
         }
     }
-    //private void Shoot()
-    //{
-    //   // var bullet = Instantiate(bulletPrefab) as Transform;
-    //   // Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-    //    if (Input.GetButtonDown("Fire2"))
-    //    {
-    //        Rigidbody2D bulletInstance = Instantiate(bullet, transform.position, Quaternion.Euler(new Vector3(0, 0, 1))) as Rigidbody2D;
-    //        bulletInstance.velocity = transform.forward * maxSpeed;
-
-    //        Physics2D.IgnoreCollision(bulletInstance.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-    //    }
-    //}
+  
 }

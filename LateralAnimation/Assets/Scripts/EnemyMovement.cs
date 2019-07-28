@@ -6,13 +6,14 @@ public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 1f;
     Rigidbody2D myRigidBody;
-    //[SerializeField] int health = 200;
+    [SerializeField] float health = 100;
 
 
     // Start is called before the first frame update
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
+        health = 100;
        
     }
 
@@ -39,5 +40,20 @@ public class EnemyMovement : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         transform.localScale = new Vector2(-(Mathf.Sign(myRigidBody.velocity.x)), 1f);
+
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
+        Debug.Log(damageDealer);
+        Debug.Log(other);
+        health -= damageDealer.GetDamage();
+     
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

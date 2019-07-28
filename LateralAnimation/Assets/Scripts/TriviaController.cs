@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using System;
 
+
+// player life - quick restart
+// intro when player gets past the first level
+
 public class TriviaController : MonoBehaviour
 {
 
@@ -90,6 +94,9 @@ public class TriviaController : MonoBehaviour
         } else
         {
             print(wrongAnswer);
+
+            //create a wrong answer icon that displays wrong answer
+            //life bar - something that looks at progress
             
         }
 
