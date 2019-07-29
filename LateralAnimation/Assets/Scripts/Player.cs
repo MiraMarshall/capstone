@@ -19,9 +19,13 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Player : MonoBehaviour
 {
     // Configurations
+    //[Header("Player"]
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] Vector2 deathKick = new Vector2(20f, 20f);
+    //[SerializeField] int health = 200;
+
+    //[Header("Projectile")]
     [SerializeField] GameObject laser;
     [SerializeField] float projectileSpeed = 10f;
     //State
@@ -56,6 +60,23 @@ public class Player : MonoBehaviour
         Die();
         Fire();
     }
+
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
+
+    //    ProcessHit(damageDealer);
+    //}
+
+    //private void ProcessHit(DamageDealer damageDealer)
+    //{
+    //    health -= damageDealer.GetDamage();
+    //    if (health <= 0)
+    //    {
+    //        Destroy(gameObject);
+
+    //    }
+    //}
 
     private void Run()
     {
@@ -114,5 +135,7 @@ public class Player : MonoBehaviour
 
         }
     }
-  
+
+ 
+
 }

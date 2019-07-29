@@ -7,7 +7,6 @@ public class MenuScreenController : MonoBehaviour
 {
     public void StartGame()
     {
-        Debug.Log("MENUSCREENCONTROLLER **************");
         SceneManager.LoadScene("Trivia");
     }
 

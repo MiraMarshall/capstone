@@ -151,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allRoundData:
   - name: Round Zero
-    timeLimitInSeconds: 20
+    timeLimitInSeconds: 30
     pointsAddedForCorrectAnswer: 5
     questions:
     - questionText: How many members are in the Washington State Senate?

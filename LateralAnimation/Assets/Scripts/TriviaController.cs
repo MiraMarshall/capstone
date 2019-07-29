@@ -121,7 +121,12 @@ public class TriviaController : MonoBehaviour
 
     public void ReturnToMenu()
     {
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene("Level 2");
+    }
+
+    public void RedoTrivia()
+    {
+        SceneManager.LoadScene("Persistent");
     }
 
     private void UpdateTimeRemainingDisplay()
