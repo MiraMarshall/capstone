@@ -86,6 +86,17 @@ public class TriviaController : MonoBehaviour
         }
     }
 
+
+    //public void changeColor()
+    //{
+
+    //    var colors = GetComponent<Button>().colors;
+    //    colors.normalColor = Color.red;
+    //    GetComponent<Button>().colors = colors;
+
+
+
+    //}
     public void AnswerButtonClicked(bool isCorrect)
     {
         Debug.Log("ANSWERBUTTONCLICKED*****************");
@@ -97,19 +108,12 @@ public class TriviaController : MonoBehaviour
 
             playerScore += currentRoundData.pointsAddedForCorrectAnswer;
             scoreDisplayText.text = "Score: " + playerScore.ToString();
-         
-
-
-
+        
 
         } else
         {
             print(wrongAnswer);
-         
-
-
-            //create a wrong answer icon that displays wrong answer
-            //life bar - something that looks at progress
+        
 
         }
 

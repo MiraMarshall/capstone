@@ -9,6 +9,7 @@ public class RoundData
   
     public string name;
     public int timeLimitInSeconds;
-    public int pointsAddedForCorrectAnswer = 5;
+    public int pointsAddedForCorrectAnswer = 10;
     public QuestionData[] questions;
+    public GameSession gameSession;
 }

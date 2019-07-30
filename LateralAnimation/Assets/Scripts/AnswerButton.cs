@@ -8,13 +8,12 @@ public class AnswerButton : MonoBehaviour {
 
     private AnswerData answerData;
     private TriviaController triviaController;
-   
+
 
     // Use this for initialization
     void Start () 
     {
         triviaController = FindObjectOfType<TriviaController> ();
-     
     }
 
     public void Setup(AnswerData data)
@@ -30,8 +29,8 @@ public class AnswerButton : MonoBehaviour {
     {
 
         Debug.Log("ANSWER BUTTON!!!!**************");
-        
 
+        
         triviaController.AnswerButtonClicked(answerData.isCorrect);
         //if (triviaController.AnswerButtonClicked(answerData.isCorrect = true))
         //{
