@@ -161,6 +161,12 @@ public class TriviaController : MonoBehaviour
         SceneManager.LoadScene("Persistent");
     }
 
+    public void RedoTrivia2()
+    {
+        SceneManager.LoadScene("Trivia 2");
+    }
+
+
     private void UpdateTimeRemainingDisplay()
     {
         timeRemainingDisplayText.text = "Time: " + Mathf.Round(timeRemaining).ToString();

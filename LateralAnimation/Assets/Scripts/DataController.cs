@@ -6,13 +6,21 @@ using UnityEngine.SceneManagement;
 public class DataController : MonoBehaviour
 {
     public RoundData[] allRoundData;
-
+    private Scene scene;
     // Use this for initialization
     void Start()
     {
         DontDestroyOnLoad(gameObject);
 
-        SceneManager.LoadScene("MenuScreen");
+        //if (scene.name == "Persistent")
+        //{
+            SceneManager.LoadScene("MenuScreen");
+
+        //} else
+        ////else (scene.name == "Persistent2");
+        //{
+        //    SceneManager.LoadScene("Menu Trivia 2");
+        //}
     }
 
     public RoundData GetCurrentRoundData()

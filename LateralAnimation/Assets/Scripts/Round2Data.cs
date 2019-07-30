@@ -17,7 +17,7 @@ public class Round2Data : MonoBehaviour
 
     public RoundData GetCurrentRoundData()
     {
-        return allRoundData[1];
+        return allRoundData[0];
     }
 
     // Update is called once per frame
