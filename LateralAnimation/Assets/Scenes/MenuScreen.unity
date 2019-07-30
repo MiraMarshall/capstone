@@ -693,7 +693,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Start Level 1 Trivia! '
+  m_Text: 'Start Trivia! '
 --- !u!222 &1784813783
 CanvasRenderer:
   m_ObjectHideFlags: 0

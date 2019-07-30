@@ -21,6 +21,9 @@ public class DataController : MonoBehaviour
         //{
         //    SceneManager.LoadScene("Menu Trivia 2");
         //}
+
+        //var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        //SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
     public RoundData GetCurrentRoundData()
