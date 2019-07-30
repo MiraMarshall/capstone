@@ -23,4 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Level 2.unity
     guid: 16565e8f755424a659e78d80dad55760
+  - enabled: 1
+    path: Assets/Scenes/Persistent2.unity
+    guid: 4b2a10d322e104133a325d539cf63bbc
+  - enabled: 1
+    path: Assets/Scenes/Menu Trivia 2.unity
+    guid: deb778da5986e475b98efc4d4e16270e
+  - enabled: 1
+    path: Assets/Scenes/Trivia 2.unity
+    guid: c75f88f1c4b0848fd9b32f2f832e8f83
   m_configObjects: {}

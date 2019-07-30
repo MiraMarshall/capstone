@@ -146,62 +146,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1023199453}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e8c31a65b77e40848e809537903fab5, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ce0da058ba524b4a8f59a1817abc45a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   allRoundData:
-  - name: Round Zero
+  - name: 
     timeLimitInSeconds: 30
     pointsAddedForCorrectAnswer: 5
     questions:
-    - questionText: How many members are in Washington's Senate?
-      answers:
-      - answerText: 53
-        isCorrect: 0
-      - answerText: 49
-        isCorrect: 1
-      - answerText: 42
-        isCorrect: 0
-    - questionText: 'How many members are in the Washington House of Representatives? '
-      answers:
-      - answerText: 96
-        isCorrect: 0
-      - answerText: 87
-        isCorrect: 0
-      - answerText: 98
-        isCorrect: 1
-    - questionText: What is the leader of the Senate called?
-      answers:
-      - answerText: President
-        isCorrect: 1
-      - answerText: Speaker
-        isCorrect: 0
-  - name: Round One
-    timeLimitInSeconds: 30
-    pointsAddedForCorrectAnswer: 5
-    questions:
-    - questionText: When is a bill subject for debate?
+    - questionText: When can a bill be up for debate?
       answers:
       - answerText: First Reading
         isCorrect: 0
-      - answerText: 'Second Reading '
+      - answerText: Second Reading
         isCorrect: 1
       - answerText: Third Reading
         isCorrect: 0
-    - questionText: Can the Governor veto all or part of a bill?
-      answers:
-      - answerText: All of a bill
-        isCorrect: 1
-      - answerText: Part of a bill
-        isCorrect: 1
-      - answerText: ' None of the bill'
-        isCorrect: 0
-    - questionText: What is an instance where a SuperMajority vote is needed?
-      answers:
-      - answerText: Passing a bill in regular session.
-        isCorrect: 0
-      - answerText: Amending the Constitution
-        isCorrect: 1
+    - questionText: 
+      answers: []
+    - questionText: 
+      answers: []
 --- !u!4 &1023199455
 Transform:
   m_ObjectHideFlags: 0

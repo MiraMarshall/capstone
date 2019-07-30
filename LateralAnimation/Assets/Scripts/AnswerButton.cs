@@ -22,6 +22,7 @@ public class AnswerButton : MonoBehaviour {
         answerData = data;
         answerText.text = answerData.answerText;
         
+        
     }
 
 
@@ -32,7 +33,27 @@ public class AnswerButton : MonoBehaviour {
         
 
         triviaController.AnswerButtonClicked(answerData.isCorrect);
+        //if (triviaController.AnswerButtonClicked(answerData.isCorrect = true))
+        //{
+        //    answerText.text = "CORRECT";
+        //}
 
-    
+       
     }
+
+    //public void RightWrongHandleClick()
+    //{
+
+    //   if 
+
+    //    //triviaController.DisplayRightOrWrong(answerData.answerText);
+    //    //if (triviaController.AnswerButtonClicked(answerData.isCorrect = true))
+    //    //{
+    //    //    answerText.text = "CORRECT";
+    //    //}
+
+
+    //}
+
+
 }

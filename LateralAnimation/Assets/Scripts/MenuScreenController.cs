@@ -10,4 +10,10 @@ public class MenuScreenController : MonoBehaviour
         SceneManager.LoadScene("Trivia");
     }
 
+
+    public void Level2()
+    {
+        SceneManager.LoadScene("Trivia 2");
+    }
+
 }

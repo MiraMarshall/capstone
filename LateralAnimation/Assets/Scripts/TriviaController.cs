@@ -26,6 +26,8 @@ public class TriviaController : MonoBehaviour
     private DataController dataController;
     private RoundData currentRoundData;
     private QuestionData[] questionPool;
+    private AnswerData answerData;
+   
 
     private bool isRoundActive;
     private float timeRemaining;
@@ -35,10 +37,12 @@ public class TriviaController : MonoBehaviour
 
     private bool isCorrect;
     private string wrongAnswer = "WRONG!!!";
+    //private bool rightOrWrong;
 
     // Use this for initialization
     void Start()
     {
+        
         dataController = FindObjectOfType<DataController>();
         currentRoundData = dataController.GetCurrentRoundData();
         questionPool = currentRoundData.questions;
@@ -89,15 +93,24 @@ public class TriviaController : MonoBehaviour
 
         if (isCorrect)
         {
+            print("CORRECT!!");
+
             playerScore += currentRoundData.pointsAddedForCorrectAnswer;
             scoreDisplayText.text = "Score: " + playerScore.ToString();
+         
+
+
+
+
         } else
         {
             print(wrongAnswer);
+         
+
 
             //create a wrong answer icon that displays wrong answer
             //life bar - something that looks at progress
-            
+
         }
 
         if (questionPool.Length > questionIndex + 1)
@@ -110,6 +123,25 @@ public class TriviaController : MonoBehaviour
         }
 
     }
+
+
+    //public void DisplayRightOrWrong(bool rightOrWrong)
+    //{
+    //    Debug.Log("Right or Wrong");
+    //    GameObject answerButtonGameObject = answerButtonObjectPool.GetObject();
+    //    AnswerButton answerButton = answerButtonGameObject.GetComponent<AnswerButton>();
+
+    //    if (rightOrWrong)
+    //    {
+    //        answerData.answerText = "CORRECT!";
+
+    //    } else
+    //    {
+    //        answerData.answerText = "WRONG";
+    //    }
+
+    //}
+
 
     public void EndRound()
     {
