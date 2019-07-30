@@ -156,6 +156,11 @@ public class TriviaController : MonoBehaviour
         SceneManager.LoadScene("Level 2");
     }
 
+    public void GameOver()
+    {
+        SceneManager.LoadScene("GameOver");
+    }
+
     public void RedoTrivia()
     {
         SceneManager.LoadScene("Persistent");
