@@ -151,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allRoundData:
   - name: Round Zero
-    timeLimitInSeconds: 30
+    timeLimitInSeconds: 20
     pointsAddedForCorrectAnswer: 5
     questions:
     - questionText: How many members are in Washington's Senate?
@@ -176,6 +176,7 @@ MonoBehaviour:
         isCorrect: 1
       - answerText: Speaker
         isCorrect: 0
+    gameSession: {fileID: 0}
   - name: Round One
     timeLimitInSeconds: 30
     pointsAddedForCorrectAnswer: 5
@@ -202,6 +203,7 @@ MonoBehaviour:
         isCorrect: 0
       - answerText: Amending the Constitution
         isCorrect: 1
+    gameSession: {fileID: 0}
 --- !u!4 &1023199455
 Transform:
   m_ObjectHideFlags: 0
@@ -214,7 +216,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1589770944
 PrefabInstance:
@@ -266,7 +268,7 @@ PrefabInstance:
     - target: {fileID: 7290050651145537672, guid: 546a171bc50b64cdd9882f5f4cb89899,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7290050651145537672, guid: 546a171bc50b64cdd9882f5f4cb89899,
         type: 3}

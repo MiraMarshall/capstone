@@ -191,7 +191,8 @@ public class TriviaController : MonoBehaviour
 
             if (timeRemaining <= 0f)
             {
-                EndRound();
+                SceneManager.LoadScene(1);
+                //EndRound();
             }
 
         }
